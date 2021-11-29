@@ -4,7 +4,7 @@ from http.server import BaseHTTPRequestHandler
 
 class DuolangoHandler(BaseHTTPRequestHandler):
 	def _allow_cors(self):
-		self.send_header('Access-Control-Allow-Origin', 'http://localhost:3001')
+		self.send_header('Access-Control-Allow-Origin', self.headers.get('Origin'))
 		self.send_header("Access-Control-Allow-Headers", "Content-Type, Accept, Authorization, X-Duolingo-Username")
 		self.send_header('Access-Control-Allow-Methods', '*')
 
