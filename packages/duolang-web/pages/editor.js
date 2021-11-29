@@ -6,12 +6,11 @@ import Footer from '../components/Footer/Footer';
 import Interpreter from '../components/Interpreter/Interpreter';
 import Loader from '../components/Loader/Loader';
 import TreeProgress from '../components/TreeProgress/TreeProgress';
-import config from '../config';
 import DuolangContext from "../contexts/Duolang";
 import { HELLO_WORLD_PROGRESS, HELLO_WORLD_TREE, INCREMENT_PROGRESS, INCREMENT_TREE } from '../lib/duolang-examples';
 import styles from '../styles/Editor.module.css';
 
-const { apiUrl } = config;
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api';
 
 export default function Editor() {
 	const router = useRouter();
@@ -39,7 +38,7 @@ export default function Editor() {
 
 	const fetchData = React.useCallback(async () => {
 		async function getCurrentCourse() {
-			const response = await fetch(`${apiUrl}/current-course`, {
+			const response = await fetch(`${API_URL}/current-course`, {
 				method: 'GET',
 				headers: {
 					'Authorization': `Bearer ${jwt}`,
@@ -51,7 +50,7 @@ export default function Editor() {
 		}
 
 		async function getCurrentTree() {
-			const response = await fetch(`${apiUrl}/current-tree`, {
+			const response = await fetch(`${API_URL}/current-tree`, {
 				method: 'GET',
 				headers: {
 					'Authorization': `Bearer ${jwt}`,
@@ -63,7 +62,7 @@ export default function Editor() {
 		}
 
 		async function getCurrentProgress() {
-			const response = await fetch(`${apiUrl}/current-progress`, {
+			const response = await fetch(`${API_URL}/current-progress`, {
 				method: 'GET',
 				headers: {
 					'Authorization': `Bearer ${jwt}`,
@@ -75,7 +74,7 @@ export default function Editor() {
 		}
 
 		async function getCourses() {
-			const response = await fetch(`${apiUrl}/courses`, {
+			const response = await fetch(`${API_URL}/courses`, {
 				method: 'GET',
 				headers: {
 					'Authorization': `Bearer ${jwt}`,
@@ -118,7 +117,7 @@ export default function Editor() {
 				fromLanguage: selectedCourse.fromLanguage,
 			});
 
-			await fetch(`${apiUrl}/change-course`, {
+			await fetch(`${API_URL}/change-course`, {
 				method: 'POST',
 				headers: {
 					'Content-Length': body.length,

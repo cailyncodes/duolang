@@ -1,11 +1,10 @@
 import cx from 'classnames';
 import { useRouter } from 'next/router';
 import React from 'react';
-import config from '../../config';
 import Loader from '../Loader/Loader';
 import styles from './styles.module.css';
 
-const { apiUrl } = config;
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api';
 
 export default function Login() {
 	const router = useRouter();
@@ -35,7 +34,7 @@ export default function Login() {
 			})
 
 			try {
-				const response = await fetch(`${apiUrl}/login`, {
+				const response = await fetch(`${API_URL}/login`, {
 					method: 'POST',
 					headers: {
 						'Content-Length': body.length,
