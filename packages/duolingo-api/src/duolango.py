@@ -2,7 +2,6 @@
 import duolingo
 import re
 import json
-import random
 from datetime import datetime, timedelta
 from json import JSONDecodeError
 
