@@ -1,0 +1,40 @@
+.skill {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	--size: 65px;
+	height: var(--size);
+	width: var(--size);
+	border-radius: 50%;
+	border: solid 3px white;
+	color: black;
+	font-size: 1.2rem;
+}
+
+.zero {
+	background-color: grey;
+}
+
+.one {
+	background-color: aqua;
+}
+
+.two {
+	background-color: green;
+}
+
+.three {
+	background-color: red;
+}
+
+.four {
+	background-color: rgb(218, 141, 0);
+}
+
+.golden {
+	background-color: rgb(252, 195, 52);
+}
+
+.legendary {
+	background-color: rgb(144, 135, 250);
+}

@@ -1,0 +1,14 @@
+.tree {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.row {
+	flex: 1 1 100%;
+	max-width: 65%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-evenly;
+	justify-self: center;
+	padding-bottom: 2rem;
+}

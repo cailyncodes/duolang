@@ -1,0 +1,22 @@
+.execution {
+	height: min-content;
+}
+
+.execution div {
+	display: flex;
+	margin: 4px 0 2px 0;
+	align-items: center;
+}
+
+.rerun {
+	padding: 0.8rem;
+	border: solid 0px black;
+	background-color: palegreen;
+	border-radius: 10px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.rerun:hover {
+	background-color: rgb(194, 250, 194);
+}

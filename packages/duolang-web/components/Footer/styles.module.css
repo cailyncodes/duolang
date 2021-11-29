@@ -1,0 +1,18 @@
+.footer {
+	background-color: #353739;
+  display: flex;
+	height: 65px;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+	align-items: center;
+	font-size: 1.4rem;
+}
+
+.footer a {
+	color: #4ec602;
+}
+
+.footer a:hover {
+	text-decoration: underline dotted;
+}

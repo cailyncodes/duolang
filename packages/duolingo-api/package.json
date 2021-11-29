@@ -1,0 +1,11 @@
+{
+  "name": "duolingo-api",
+  "packageManager": "yarn@3.1.0",
+  "scripts": {
+    "start": "vercel dev -l 0.0.0.0:3000 --token=35boikNb0rdZNTuZNrWaEZ0o"
+  },
+  "devDependencies": {
+    "@now/build-utils": "^2.7.0",
+    "vercel": "^23.1.2"
+  }
+}

@@ -1,0 +1,28 @@
+.login {
+	text-align: center;
+}
+
+.login p {
+	font-size: 1.15rem;
+	flex: 1 0 100%;
+}
+
+.login input {
+	border-radius: 5px;
+	height: 40px;
+	padding: 15px 10px;
+}
+
+.login .error {
+	border: 3px solid #ee1265;
+}
+
+.login .actions {
+	margin-top: 1rem;
+}
+
+.loader {
+	display: block;
+	position: relative;
+	height: 60px;
+}

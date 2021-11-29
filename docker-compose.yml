@@ -1,0 +1,29 @@
+version: '3.2'
+
+services:
+  interpreter:
+    image: node:16
+    volumes:
+      - $PWD:/usr/src/app
+    working_dir: /usr/src/app
+    command: sleep infinity
+    user: "node:node"
+  duolingo-api:
+    build:
+      context: packages/duolingo-api
+    volumes:
+      - $PWD/packages/duolingo-api:/usr/src/app
+    working_dir: /usr/src/app
+    command: sleep infinity
+    ports:
+      - 3000:3000
+    user: "node:node"
+  duolang-web:
+    image: node:16
+    volumes:
+      - $PWD/packages/duolang-web:/usr/src/app
+    working_dir: /usr/src/app
+    command: yarn dev
+    ports:
+      - 3001:3000
+    user: "node:node"

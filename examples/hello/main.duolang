@@ -1,0 +1,23 @@
+4     # mark string
+1 4   # (01) (00) [implicit continue]
+2 4   # (10) (00) [implicit continue]
+1     # (01) [implicit continue]
+2     # (10) [implicit continue]
+1 1   # (01) (01) [implicit continue]
+5     # Stop and push current data (He)
+5 4   # Ignore 5 and mark string
+1     # (01)
+2 3   # (10) (11)
+4     # (00)
+5     # Push (He, l)
+1 4   # duplicate top of stack (He,l,l)
+4     # Mark string
+1 2 3 # (01) (10) (11)
+3     # (11)
+5     # Push (He,l,l,o)
+5     # Continue
+2 1   # (He,l,lo)
+2 1   # (He,llo)
+2 1   # (Hello)
+1 2   # Hello
+0
