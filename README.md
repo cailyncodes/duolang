@@ -10,6 +10,16 @@ At its core, Duolang is a stack-based with a single-cell tape interpreted langua
 
 The goal with designing this language around Duolingo was to make it such that anyone's progress in a course would successfully execute (perhaps infinitely, but no runtime errors). Thus, one of the core principles is that when encountering values that would be otherwise undefined and normally cause runtime issues, the language itself will use trivial defaults (e.g. 0, '', etc). I also wanted invocations of an arbitrary program to have a high likely hood of at least some (perhaps meaningless) output. As part of this, whatever is on the top of the stack when the program completes (if it completes) will be printed to the registered output interface (e.g. terminal window).
 
+*Notes* (To be converted into text)
+
+Any Duolingo tree can execute (no undefined behavior), just maybe not meaningful
+
+Legendary makes coding programs easier, but anything can be written without it
+
+Hello world should be achievable in Spanish from English trees (length constraint)
+
+Duolang is a meta language, and programs are different based on the underlying tree
+
 ### What makes it a meta language?
 
 Coming soon
@@ -23,18 +33,6 @@ Mostly because why not. More accurately, I had just watched a Youtube video on t
 ## Gotcha. But what can I do with it?
 
 I haven't fully thought through everything so I hesitate to make a claim on its turing-completeness. That being said, it does support arbitrary jump/goto statements and the stack also supports switching the first and second items on the stack, which I tentatively think is equivalent to a proper stack with an infinite tape (which would be turing-complete). Thus, theoretically, it is a powerful language. That being said, it has no core modules/standard library for interacting with anything other than simple non-file-based I/O. Additionally, programs are rather verbose (and difficult to read/understand).
-
-## 
-
-## Philosophy
-
-Any reached Duolingo tree can execute (no undefined behavior), just maybe not meaningful
-
-Legendary makes coding programs easier, but anything can be written without it
-
-Hello world should be achievable in the Spanish from English tree
-
-Duolang is a meta language, and programs are different based on the underlying language (language pair tree)
 
 ## Grammar
 
