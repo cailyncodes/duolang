@@ -19,7 +19,7 @@ export default function Home({ host, url }) {
 				<p>{'<'}insert trademarked cute green owl{'>'}</p>
 				<div className={styles.description}>
 					<p>Duolang is an esoteric meta programming language: Duolingo is your code editor and your progress in a course is the source code. You can use this site (<Link href={url}>{host}</Link>) to execute the programs and also more easily simulate edits to both your progress and tree.</p>
-					<p>Check out the <a href="" target="_blank" rel="noreferrer noopener">Github</a> for more information about the syntax/grammar, design philosophy, and general motivation.</p>
+					<p>Check out the <a href="https://github.com/cailyncodes/duolang" target="_blank" rel="noreferrer noopener">Github</a> for more information about the syntax/grammar, design philosophy, and general motivation.</p>
 				</div>
 				<Login />
 			</main>
