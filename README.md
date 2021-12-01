@@ -4,7 +4,7 @@ Duolang is an esoteric meta programming language. You use the Duolingo app as yo
 
 ## How does it work?
 
-At its core, Duolang is a stack-based, single-cell tape, interpreted language, largely adopting JS-semantics (when applicable).
+At its core, a Duolang language is a stack-based, single-cell tape, interpreted language, largely adopting JS-semantics (when applicable).
 
 ### Philosophy
 
