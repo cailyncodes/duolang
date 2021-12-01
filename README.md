@@ -28,7 +28,7 @@ Instead, I decided to leverage the fact that within a row there may be one to th
 
 However, this means that the tree structure itself influences the actual execution logic. Each course has a different tree structure, and further, each user in a given course might have a different tree depending on when they started the course and if they are in any experiments. All of this makes Duolang a meta programming language such that it defined a family of programming languages based on given Duolingo trees.
 
-(Any inaccuracies on how Duolingo courses work are exclusively my own and the understanding that I do have is thanks to [Jenna Tishler]() who graciously let me bug her with a series of questions when I was formulating the Duolang idea and its feasability).
+(Any inaccuracies on how Duolingo courses work are exclusively my own and the understanding that I do have is thanks to [Jenna Tishler](https://github.com/jtishler) who graciously let me bug her with a series of questions when I was formulating the Duolang idea and its feasability).
 
 ## And how do I know what the program is supposed to do before running it?
 
