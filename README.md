@@ -30,7 +30,7 @@ However, this means that the tree structure itself influences the actual executi
 
 (Any inaccuracies on how Duolingo courses work are exclusively my own and the understanding that I do have is thanks to [Jenna Tishler](https://github.com/jtishler) who graciously let me bug her with a series of questions when I was formulating the Duolang idea and its feasability).
 
-## And how do I know what the program is supposed to do before running it?
+### And how do I know what the program is supposed to do before running it?
 
 See the end of this README for a detailed list of the grammar. Nonetheless, like reading any program, but especially true for stack-based languages, it will take time to actually understand what the specific actions of the program cause the execution to do.
 
@@ -42,7 +42,7 @@ Well the official code editor is [Duolingo](https://www.duolingo.com/) (either t
 
 ## Okay, sounds cool (kinda), but why?
 
-Mostly because why not. More accurately, I had just watched a Youtube video on the origins of esoteric programming languages and wanted to explore it in more depth. Designing my own programming language has been something that's intereted me since college and wasn't able to take my school's Compilers and Program Analaysis course due to scheduling issues. In between my previous job and starting work at Duolingo, I had some free time and decided that I would learn how to write an interpreter and design a language using Duolingo as my inspiration. (Also, I needed a fun fact about myself to share on my first day, and like what isn't fun about this haha).
+Mostly because why not. More accurately, I had just watched a [Youtube video](https://www.youtube.com/watch?v=cQ7bcCrJMHc) on the origins of esoteric programming languages and wanted to explore it in more depth. Designing my own programming language has been something that's intereted me since college and wasn't able to take my school's Compilers and Program Analaysis course due to scheduling issues. In between my previous job and starting work at Duolingo, I had some free time and decided that I would learn how to write an interpreter and design a language using Duolingo as my inspiration. (Also, I needed a fun fact about myself to share on my first day, and like what isn't fun about this haha).
 
 ## Gotcha. But what can I do with it?
 
