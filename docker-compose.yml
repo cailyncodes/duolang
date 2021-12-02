@@ -13,6 +13,7 @@ services:
       context: packages/duolingo-api
     volumes:
       - $PWD/packages/duolingo-api:/usr/src/app
+      - $PWD/packages/duolingo-api:/usr/src/app/packages/duolingo-api
     working_dir: /usr/src/app
     command: sleep infinity
     ports:
