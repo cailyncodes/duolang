@@ -43,11 +43,11 @@ export default function Login() {
 					body
 				})
 
-				const { jwt } = await response.json();
+				const { jwt, username: usernameResponse } = await response.json();
 
 				if (jwt) {
 					window.localStorage.setItem('duolingo_jwt', jwt);
-					window.localStorage.setItem('duolingo_username', username);
+					window.localStorage.setItem('duolingo_username', usernameResponse);
 					router.push('/editor')
 				} else {
 					throw new Error('No JWT returned')

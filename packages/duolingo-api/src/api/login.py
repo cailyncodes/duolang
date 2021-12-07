@@ -13,5 +13,5 @@ class handler(DuolangoHandler):
 		lingo = Duolango(username)
 		lingo.password = password
 		data = lingo.login()
-		self.success({ "jwt": data })
+		self.success({ "jwt": data[0], "username": data[1] })
 		return

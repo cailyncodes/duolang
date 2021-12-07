@@ -81,9 +81,31 @@ class Duolango(duolingo.Duolingo):
 			)
 		return resp
 
+	def _login(self):
+		"""
+		Authenticate through ``https://www.duolingo.com/login``.
+		"""
+		if self.jwt is None:
+			self._load_session_from_file()
+		if self._check_login():
+			return True
+		self.jwt = None
+
+		login_url = "https://www.duolingo.com/login?fields=username"
+		data = {"login": self.username, "password": self.password}
+		request = self._make_req(login_url, data)
+		attempt = request.json()
+
+		if "failure" not in attempt:
+			self.jwt = request.headers['jwt']
+			if '@' in self.username:
+				self.username = attempt['username']
+			self._save_session_to_file()
+			return True
+
 	def login(self):
 		self._login()
-		return self.jwt
+		return (self.jwt, self.username)
 
 	def get_courses(self):
 		return self.get_data_by_user_id(['courses'])['courses']
